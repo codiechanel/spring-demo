@@ -1,0 +1,74 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  /* background-color: lightseagreen; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  height: 100vh;
+  /* it is necessary to use row */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: steelblue;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+
+  /* flex direction should be row */
+}
+
+#root {
+  display: flex;
+  flex: 1;
+  /* flex direction should be row since it it the parent of Left and Right Section... */
+
+  /* optional */
+  justify-content: space-between;
+
+  /* background-color: rgb(95, 89, 102); */
+}
+
+/* react-bootstrap */
+.tab-content {
+  overflow: auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  /* height: 12px;
+  width: 12px; */
+  /* background: gray; */
+  /* just tint the background */
+  background: rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #40566f;
+  /* -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75); */
+}
+
+/* no effect */
+::-webkit-scrollbar-corner {
+  /* background: #000; */
+  background: yellow;
+}
